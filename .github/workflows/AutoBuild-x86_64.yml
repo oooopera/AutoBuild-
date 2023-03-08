@@ -135,6 +135,8 @@ jobs:
         git clone -b $REPO_BRANCH $REPO_URL openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
+        rm -f feeds.conf.default && cp $GITHUB_WORKSPACE/feeds.conf.default feeds.conf.default
+
         ./scripts/feeds update -a
         ./scripts/feeds install -a
 
