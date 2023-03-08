@@ -110,7 +110,7 @@ Default_Title="${Default_Title}"
 Regex_Skip="${Regex_Skip}"
 Version_File=${Version_File}
 Fw_MFormat=${Fw_MFormat}
-FEEDS_CONF=${WORK}/feeds.conf.default
+FEEDS_CONF=${GITHUB_WORKSPACE}/feeds.conf.default
 Author_URL=${Author_URL}
 ENV_FILE=${GITHUB_ENV}
 
